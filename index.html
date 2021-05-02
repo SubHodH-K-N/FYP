@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Year Project</title>
+  </head>
+  <body>
+    <section class="introduction">
+      <h1>Welcome to Our Final Year Project</h1>
+      <p>On</p>
+      <h2>Histopathological Analysis using Neural Networks</h2>
+      <img src="./team.svg" alt="teamwork" />
+      <i class="fas fa-arrow-down fa-xs"></i>
+    </section>
+    <section class="model">
+      <div class="steps">
+        <h3>Instructions</h3>
+      </div>
+      <div class="dndcontainer">
+        <h3>Model</h3>
+        <div id="dnd" class="dnd">
+          <input type="file" name="" id="" hidden />
+          <img src="./upload_image.svg" alt="upload" id="upload" />
+          <pre>
+Drag & Drop here
+Or
+Click to select from Folder
+          </pre>
+        </div>
+        <button id="predict" class="predict">Predict</button>
+        <div class="results">
+          <p id="pos">IDC Positive (1) : 0%</p>
+          <p id="neg">IDC Negative (0) : 100%</p>
+        </div>
+      </div>
+    </section>
+    <section class="information">Information</section>
+  </body>
+  <script src="./script.js"></script>
+</html>
