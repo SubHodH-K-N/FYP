@@ -38,7 +38,9 @@ predictButton.addEventListener("click", async (e) => {
 });
 
 const loadModel = async () => {
-  const model = await tf.loadLayersModel("");
+  const model = await tf.loadLayersModel(
+    "https://raw.githubusercontent.com/SubHodH-K-N/FYP/main/model/model.json"
+  );
   return model;
 };
 
@@ -48,7 +50,6 @@ const makePrediction = async () => {
   let tensor = tf.browser
     .fromPixels(uploadImage)
     .resizeNearestNeighbor([50, 50]) // change the image size here
-    .toFloat()
     .div(tf.scalar(255.0))
     .expandDims();
 
