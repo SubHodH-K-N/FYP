@@ -54,7 +54,7 @@ const makePrediction = async () => {
     .expandDims();
 
   let pred = await model.predict(tensor).data();
-
-  pos.innerHTML = `IDC Positive (1) : ${Math.round(pred[1] * 100).toFixed(2)}%`;
-  neg.innerHTML = `IDC Negative (0) :${Math.round(pred[0] * 100).toFixed(2)}%`;
+  const predictedValue = Math.round(pred[0] * 100).toFixed(2);
+  pos.innerHTML = `IDC Positive (1) : ${predictedValue}%`;
+  neg.innerHTML = `IDC Negative (0) :${100 - predictedValue}.00%`;
 };
