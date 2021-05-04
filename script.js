@@ -48,8 +48,8 @@ const makePrediction = async () => {
   const model = await loadModel();
 
   let tensor = tf.browser
-    .fromPixels(uploadImage)
-    .resizeNearestNeighbor([50, 50]) // change the image size here
+    .fromPixels(uploadImage, 7)
+    .resizeNearestNeighbor([100, 100]) // change the image size here
     .div(tf.scalar(255.0))
     .expandDims();
 
