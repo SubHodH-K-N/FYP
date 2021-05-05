@@ -56,5 +56,5 @@ const makePrediction = async () => {
   let pred = await model.predict(tensor).data();
   const predictedValue = Math.round(pred[0] * 100).toFixed(2);
   pos.innerHTML = `IDC Positive (1) : ${predictedValue}%`;
-  neg.innerHTML = `IDC Negative (0) :${100 - predictedValue}.00%`;
+  neg.innerHTML = `IDC Negative (0) : ${100 - predictedValue}.00%`;
 };

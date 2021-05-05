@@ -25,17 +25,20 @@
     <section class="model">
       <div class="steps">
         <h3>Instructions</h3>
+        <ol class="list">
+          <li>Select an image of size 50px by 50px from your folder</li>
+          <li>Drag and drop it within the dotted lines</li>
+          <li>Wait until the model gives you the predictions</li>
+          <li>IDC Positive (1) - Presence of IDC</li>
+          <li>IDC Negative (0) - Absence of IDC</li>
+        </ol>
       </div>
       <div class="dndcontainer">
         <h3>Model</h3>
         <div id="dnd" class="dnd">
-          <input type="file" name="" id="" hidden />
+          <input type="file" name="fileUpload" id="fileUpload" hidden />
           <img src="./upload_image.svg" alt="upload" id="upload" />
-          <pre>
-Drag & Drop here
-Or
-Click to select from Folder
-          </pre>
+          <p>Drag & Drop here</p>
         </div>
         <button id="predict" class="predict">Predict</button>
         <div class="results">
