@@ -84,6 +84,20 @@ section.information > div {
   margin-bottom: 10px;
 }
 
+section.information > h1 {
+  font-size: clamp(20px, 3vw, 30px);
+  margin-bottom: 10px;
+}
+
+section.information > div h2 {
+  font-size: clamp(15px, 3vw, 25px);
+  margin-bottom: 5px;
+}
+
+section.information > div p {
+  font-size: clamp(10px, 3vw, 20px);
+}
+
 .list {
   padding: 0 10px;
   text-align: left;
