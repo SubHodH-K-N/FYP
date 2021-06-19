@@ -72,6 +72,12 @@ section.model > div {
   padding: 21px 25px;
 }
 
+section.information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .list {
   padding: 0 10px;
   text-align: left;
